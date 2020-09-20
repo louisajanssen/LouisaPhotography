@@ -11,5 +11,14 @@
 .third{
     width: 30%;
     display: inline-block;
-    
+
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.contact{
+    font-weight: bold;
 }
