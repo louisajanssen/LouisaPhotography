@@ -7,3 +7,9 @@
     height: auto;
     padding: 5px;
 }
+
+.third{
+    width: 30%;
+    display: inline-block;
+    
+}
