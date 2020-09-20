@@ -8,15 +8,18 @@
     padding: 5px;
 }
 
-.third{
-    width: 30%;
-    display: inline-block;
 
-}
-
-h1{
+.cap{
     text-align: center;
     padding: 10px;
+}
+
+.intext{
+    text-align: center;
+}
+
+.imgin{
+    margin: 5px;
 }
 
 .contact{
