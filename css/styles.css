@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(248, 249, 250);
+}
 .port {
     padding-bottom: 25px;
 }
@@ -19,7 +22,7 @@
 }
 
 .imgin{
-    margin: 5px;
+    margin: 8px;
 }
 
 .contact{
