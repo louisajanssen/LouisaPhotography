@@ -13,7 +13,13 @@ function SubmitIt() {
     console.log(messageElement.value);
     
     if (htmlElement.value == "" || emailElement.value == "" || phoneElement.value == "" || messageElement.value == "") {
-        alert("Please fill blanks!")
+       const ErrorMessage = document.getElementById('ErrorMessage')
+       ErrorMessage.innerText = "Please fill all the blanks!"
+    }
+    else {
+        const ErrorMessage = document.getElementById('ErrorMessage')
+        ErrorMessage.innerText = ""
     }
 }
+
 
