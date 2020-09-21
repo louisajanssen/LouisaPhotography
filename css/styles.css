@@ -1,5 +1,6 @@
 body{
     background-color: rgb(248, 249, 250);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .port {
     padding-bottom: 25px;
@@ -15,10 +16,17 @@ body{
 .cap{
     text-align: center;
     padding: 10px;
+    font-variant: small-caps; 
+}
+
+.capt{
+    font-weight: bold;
+    font-variant: small-caps;
+    
 }
 
 .intext{
-    text-align: center;
+    text-align: center;    
 }
 
 .imgin{
