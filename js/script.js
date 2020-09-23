@@ -22,8 +22,12 @@ function SubmitIt() {
     }
 }
 
-$('#Fullscreen').css('height', $(document).outerWidth() + 'px');
-    
+// const docWidth = $(document).outerWidth()
+// const docHeight = $(document).outerHeight()
+
+// $('#Fullscreen').css('width', $(document).outerWidth() + 'px');
+// $('#Fullscreen').css('height', $(document).outerHeight() + 'px');
+
 $('.port').click(function () {
     var src = $(this).attr('src'); 
     $('#Fullscreen img').attr('src', src); 

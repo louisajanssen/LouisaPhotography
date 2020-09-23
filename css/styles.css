@@ -45,6 +45,7 @@ body{
 #Fullscreen {
 
     height: 100%;
+    width: 100%;
 
     display: none;
 
@@ -63,9 +64,4 @@ body{
 
 
 
-}
-#Fullscreen img{
-height: 100%;
-display: block;
-margin: 0 auto;
 }
