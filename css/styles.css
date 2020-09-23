@@ -1,6 +1,6 @@
 body{
     background-color: rgb(248, 249, 250);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Arial, Helvetica;
 }
 .port {
     padding-bottom: 25px;
@@ -16,7 +16,7 @@ body{
 .cap{
     text-align: center;
     padding: 10px;
-    font-variant: small-caps; 
+    font-variant: small-caps;
 }
 
 .capt{
@@ -35,4 +35,37 @@ body{
 
 .contact{
     font-weight: bold;
+}
+
+#MainImages img {
+
+    cursor: pointer;
+}
+
+#Fullscreen {
+
+    height: 100%;
+
+    display: none;
+
+    position:fixed;
+
+    top:0;
+
+    right:0;
+
+    bottom:0;
+
+    left:0;
+
+    /* I made a 50% opacity black tile background for this 
+     div so it would seem more... modal-y*/
+
+
+
+}
+#Fullscreen img{
+height: 100%;
+display: block;
+margin: 0 auto;
 }
