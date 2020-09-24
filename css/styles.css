@@ -59,9 +59,22 @@ body{
 
     left:0;
 
-    /* I made a 50% opacity black tile background for this 
-     div so it would seem more... modal-y*/
-
-
-
 }
+.fot {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+  }
+
+  .fotc {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+  }
+
