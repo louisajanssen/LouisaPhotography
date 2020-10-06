@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
+
 
 $errors = [];
 $errorMessage = '';
 
 if (!empty($_POST)) {
+
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
@@ -30,12 +28,13 @@ if (!empty($_POST)) {
     }
 
     if (empty($errors)) {
+
         $toEmail = 'info@louisajphotography.com';
         $emailSubject = 'Your contact request for louisajphotography.com';
-        $headers = ['From' => $email, 'Reply-To' => $email, 'Cc' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
+        $headers = ['From' => $toEmail, 'Reply-To' => $email, 'Cc' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
 
         $bodyParagraphs = ["Name: {$name}", "Phone: {$phone}", "Email: {$email}", "Message:", $message];
-        $body = join(PHP_EOL, $bodyParagraphs);
+        $body = join("<br/>", $bodyParagraphs);
 
         if (mail($toEmail, $emailSubject, $body, $headers)) {
             header('Location: thank-you.html');
@@ -48,7 +47,14 @@ if (!empty($_POST)) {
     }
 }
 
-echo "$errorMessage"
+?>
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+
+echo "$errorMessage";
 ?>
 
 </body>
