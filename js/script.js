@@ -23,6 +23,9 @@ function SubmitIt(event) {
     }
 }
 
+const form=document.getElementById("contactform")
+form.addEventListener("submit", SubmitIt)
+
 // const docWidth = $(document).outerWidth()
 // const docHeight = $(document).outerHeight()
 

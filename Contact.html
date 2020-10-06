@@ -32,10 +32,10 @@
                 <img src="img/fb.svg"  class="img-fluid logo" alt="facebook logo">
             </a>
         </div>
-            <form class="container" onsubmit="SubmitIt()" method="POST" action="SendEmail.php">
+            <form class="container" method="POST" action="SendEmail.php" id="contactform">
                 <div class="form-group contact">
                     <label for="Name">Name</label>
-                    <input type="email" class="form-control" id="Name" placeholder="Name">
+                    <input type="text" class="form-control" id="Name" placeholder="Name">
                 </div>
                 <div class="form-group contact">
                     <label for="Email">Email Address</label>
@@ -43,14 +43,14 @@
                 </div>
                 <div class="form-group contact">
                     <label for="Phone">Phone Number</label>
-                    <input type="email" class="form-control" id="Phone" placeholder="(---) --- ---">
+                    <input type="tel" class="form-control" id="Phone" placeholder="(---) --- ---">
                 </div>
                 <div class="form-group contact">
                 <label for="Message">Message</label>
-                <textarea class="form-control" id="Message" rows="3"></textarea>
+                <textarea type="text" class="form-control" id="Message" rows="3"></textarea>
                 </div>
                 <p id= "ErrorMessage"></p>
-                <input class="btn btn-outline-dark" value="Submit"></input>
+                <input class="btn btn-outline-dark" value="Submit" type="submit"></input>
             </form>
         <!-- JS, Popper.js, and jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
