@@ -1,4 +1,4 @@
-function SubmitIt() {
+function SubmitIt(event) {
     const htmlElement = document.getElementById('Name')
     console.log(htmlElement.value);
    
@@ -15,6 +15,7 @@ function SubmitIt() {
     if (htmlElement.value == "" || emailElement.value == "" || phoneElement.value == "" || messageElement.value == "") {
        const ErrorMessage = document.getElementById('ErrorMessage')
        ErrorMessage.innerText = "Please fill all the blanks!"
+       event.preventDefault()
     }
     else {
         const ErrorMessage = document.getElementById('ErrorMessage')
